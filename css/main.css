@@ -8,6 +8,7 @@ html {
 
 body {
 	font-family: Arial, Tahoma, sans-serif;
+	overflow: hidden;
 }
 
 .mainbody {
@@ -23,9 +24,13 @@ body {
 }
 
 footer {
-	height: 50px;
-	margin-bottom: -200px;
+	position: absolute;
+	height: 8%;
+	bottom: 0;
+	left: 0;
+/*	margin-bottom: -200px*/;
 	width: 100%;
+	background-color: rgba(242,242,242, .7);
 }
 
 .group:before, 
@@ -60,7 +65,7 @@ nav a {
 	display: block;
 }
 
-#topnav {
+#topnav ul li {
 	/*padding-right: 2%;*/
 	padding: 2px 0;
 }
@@ -72,8 +77,8 @@ nav a {
 	border-top: 1px solid rgb(230,230,230);
 }
 
-nav#right-nav ul li, nav #left-nav ul li {
-	padding: 14px 0;
+nav#right-nav ul li, nav#left-nav ul li {
+	padding: 20px 0;
 }
 
 nav#left-nav{
@@ -86,11 +91,11 @@ nav#left-nav{
 nav#right-nav{
 	list-style: none;
 	float: right;
-	margin-left: 25px;
+	margin-right: 25px;
 	margin-bottom: 0;
 }
 
-nav#right-nav a, nav#footer-nav a {
+nav#right-nav a, nav#left-nav a {
 	padding: 0 15px;
 	display: block;
 	color: rgb(100,100,100);
@@ -112,11 +117,16 @@ a:hover {
 }
 
 
+/***********************************
+	IMAGE POSITIONING
+************************************/
+
 .mainbody img {
 	max-width: 269px;
 	display: block;
-	margin: 100px auto 0;
+	margin: 150px auto 0;
 }
+
 
 
 /*********************************************************
@@ -191,6 +201,58 @@ nav ul li button#signin {
 	/*background: linear-gradient(to bottom, rgb(245,245,245), rgb(240,240,240));*/
 }
 
+
+/***********************************
+	GRID ICON BUTTON
+************************************/
+
 #icon {
 	padding: 7px 10px;
 }
+
+#icon:hover {
+	/*box-shadow: 0 1px 1px 0 #CCC;*/
+	/*color: #333;*/
+	opacity: 1;
+	filter: alpha(opacity=100);
+}
+
+
+/***********************************
+	MEDIA QUERY
+************************************/
+/*
+@media screen and (max-width: 660px) {
+	nav#right-nav, nav#left-nav {
+		float: none;
+		margin: 0 auto;
+	}
+
+	nav#right-nav ul, nav#left-nav ul {
+		text-align: center;
+	}
+
+	nav#right-nav ul li, nav#left-nav ul li {
+		padding: 5px 0px;
+	}
+}
+
+@media screen and (max-width: 660px) {
+	.bottomnav {
+		background: none;
+		border: none;
+	}
+
+	nav#right-nav a, nav#left-nav a {
+		padding-left: 4px;
+		padding-right: 4px;
+
+	}
+
+	nav#right-nav ul:last-child {
+		display: none;
+	}
+	na#left-nav ul:nth-child(2) {
+		display: 
+	}
+}*/
