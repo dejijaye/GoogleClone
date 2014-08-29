@@ -1,0 +1,258 @@
+/***********************************
+	GENERAL
+************************************/
+
+html {
+	max-width: 100%;
+}
+
+body {
+	font-family: Arial, Tahoma, sans-serif;
+	overflow: hidden;
+}
+
+.mainbody {
+	text-align: center;
+	display: block;
+	max-width: 700px;
+	margin: 100px auto;
+	min-height: 100%;
+}
+
+#wrapper {
+	min-height: 100%;
+}
+
+footer {
+	position: absolute;
+	height: 8%;
+	bottom: 0;
+	left: 0;
+/*	margin-bottom: -200px*/;
+	width: 100%;
+	background-color: rgba(242,242,242, .7);
+}
+
+.group:before, 
+.group:after {
+	content: "";
+	display: table;
+}
+
+.group:after{
+	clear: both;
+}
+
+
+/***********************************
+	NAVIGATION
+************************************/
+nav#topnav ul {
+	list-style: none;
+	float: right;
+	margin-right: 25px;
+	margin-top: 10px;
+	font-size: small;
+}
+
+nav ul li {
+	float: left;
+	padding: 5% 0;
+}
+
+nav a {
+	padding: 10px;
+	display: block;
+}
+
+#topnav ul li {
+	/*padding-right: 2%;*/
+	padding: 2px 0;
+}
+
+.bottomnav{
+	font-size: 13px;
+	background: linear-gradient(to bottom, rgb(245,245,245), rgb(240,240,240));
+	width: 100%;
+	border-top: 1px solid rgb(230,230,230);
+}
+
+nav#right-nav ul li, nav#left-nav ul li {
+	padding: 20px 0;
+}
+
+nav#left-nav{
+	list-style: none;
+	float: left;
+	margin-left: 25px;
+	margin-bottom: 0;
+}
+
+nav#right-nav{
+	list-style: none;
+	float: right;
+	margin-right: 25px;
+	margin-bottom: 0;
+}
+
+nav#right-nav a, nav#left-nav a {
+	padding: 0 15px;
+	display: block;
+	color: rgb(100,100,100);
+}
+
+
+/***********************************
+	LINKS
+************************************/
+
+
+a, a:link, a:visited {
+	text-decoration: none;
+	color: #333;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+
+/***********************************
+	IMAGE POSITIONING
+************************************/
+
+.mainbody img {
+	max-width: 269px;
+	display: block;
+	margin: 150px auto 0;
+}
+
+
+
+/*********************************************************
+	BODY: SEARCH BAR SEARCH BUTTON AND LUCKY BUTTONS
+**********************************************************/
+input#searchbar {
+	width: 81%;
+	display: block;
+	margin: 20px auto 10px;
+	padding: 6px 9px;
+	border: 1px solid #CCC;
+	background: url(../image/mic.gif) no-repeat right;
+	opacity: 0.7;
+    filter: alpha(opacity=70); /* For IE8 and earlier */
+}
+
+input#searchbar:hover {
+	
+	border: 1px solid #999;
+}
+
+input#searchbar:focus {
+	
+	border: 1px solid #66F;
+	outline: none;
+}
+
+#searchbtn, #luckybtn {
+	font-weight: bold;
+	font-size: 11px;
+	color: #444;
+	padding: 6px 8px;
+	border-radius: 2px;
+	background: linear-gradient(to bottom, rgb(245,245,245), rgb(240,240,240));
+	margin: 7px;
+	border: 1px solid rgb(215,215,215);
+}
+
+
+#searchbtn:hover, #luckybtn:hover {
+	box-shadow: 0 1px 1px 0 #CCC;
+	color: #333;
+	background: linear-gradient(to bottom, rgb(245,245,245), rgb(240,240,240));
+}
+
+
+#searchbtn:focus, #luckybtn:focus {
+	outline: none;
+}
+
+/***********************************
+	SIGNIN BUTTON
+************************************/
+
+#signin {
+	width: 71px;
+	height: 30px;
+	background-color: #4285F4;
+	border: 1px solid #4285F4;
+	font-weight: 600;
+	color: white;
+	border-radius: 2px;
+}
+
+nav ul li button#signin {
+	padding: 3% 0;
+}
+
+#signin:hover {
+	box-shadow: 0 1px 1px 0 #CCC;
+	/*color: #333;*/
+	/*background: linear-gradient(to bottom, rgb(245,245,245), rgb(240,240,240));*/
+}
+
+
+/***********************************
+	GRID ICON BUTTON
+************************************/
+
+#icon {
+	padding: 7px 10px;
+}
+
+#icon:hover {
+	/*box-shadow: 0 1px 1px 0 #CCC;*/
+	/*color: #333;*/
+	opacity: 1;
+	filter: alpha(opacity=100);
+}
+
+
+/***********************************
+	MEDIA QUERY
+************************************/
+/*
+@media screen and (max-width: 660px) {
+	nav#right-nav, nav#left-nav {
+		float: none;
+		margin: 0 auto;
+	}
+
+	nav#right-nav ul, nav#left-nav ul {
+		text-align: center;
+	}
+
+	nav#right-nav ul li, nav#left-nav ul li {
+		padding: 5px 0px;
+	}
+}
+
+@media screen and (max-width: 660px) {
+	.bottomnav {
+		background: none;
+		border: none;
+	}
+
+	nav#right-nav a, nav#left-nav a {
+		padding-left: 4px;
+		padding-right: 4px;
+
+	}
+
+	nav#right-nav ul:last-child {
+		display: none;
+	}
+	na#left-nav ul:nth-child(2) {
+		display: 
+	}
+}*/
